@@ -12,7 +12,7 @@ GameObject:
   - 65: {fileID: 6500000}
   - 23: {fileID: 2300000}
   m_Layer: 0
-  m_Name: Box3
+  m_Name: longLocker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24,9 +24,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.8265133, y: .18698597, z: 23.5941296}
-  m_LocalScale: {x: 1, y: 1.29999995, z: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 8.17491627, y: -.0711899996, z: 5.41835022}
+  m_LocalScale: {x: 5, y: 1.50238299, z: .551285028}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!23 &2300000
@@ -41,7 +41,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 3c3a6a88834413a45881cd0fdaaed430, type: 2}
+  - {fileID: 2100000, guid: 1892d84b093ba2949aaae15fb6a5da02, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
