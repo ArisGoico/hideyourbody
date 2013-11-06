@@ -8,6 +8,8 @@ public class CameraMovement : MonoBehaviour {
 	public float maxRotationRight		= 0.0f;
 	public float rotationSpeed			= 1.0f;
 	
+	public bool moving					= true;
+	
 	private bool rotatingLeft			= false;
 	private Quaternion rotationLeft;
 	private Quaternion rotationRight;
@@ -18,6 +20,8 @@ public class CameraMovement : MonoBehaviour {
 	}
 	
 	void Update () {
+		if (!moving)
+			return;
 		if (rotatingLeft) {		//Rotating left
 			this.transform.localRotation = Quaternion.RotateTowards(this.transform.localRotation, rotationLeft, rotationSpeed * Time.deltaTime);
 		}
