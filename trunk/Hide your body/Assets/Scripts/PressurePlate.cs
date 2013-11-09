@@ -56,8 +56,7 @@ public class PressurePlate : MonoBehaviour {
         	PressurePlateInterface script = null;
         	if (triggers.tag == "Camera") {
 				//Its a camera
-				script = triggers.GetComponentInChildren<PressurePlateCamera>();
-				
+				script = triggers.GetComponentInChildren<PressurePlateCamera>();				
 			}
 			else if (triggers.tag == "Player") {
 				//Its the player
@@ -69,6 +68,9 @@ public class PressurePlate : MonoBehaviour {
 			}
 			
 			if (script != null) {
+				/*
+				MAFIN - aqui estamos seguros de que se activa y que lo que le han puesto encima pasa por el filtro.
+				*/
 				switch (actionIn) {
 					case Actions.Deactivate: 
 						script.Deactivate();
@@ -92,8 +94,7 @@ public class PressurePlate : MonoBehaviour {
         	PressurePlateInterface script = null;
         	if (triggers.tag == "Camera") {
 				//Its a camera
-				script = triggers.GetComponentInChildren<PressurePlateCamera>();
-				
+				script = triggers.GetComponentInChildren<PressurePlateCamera>();				
 			}
 			else if (triggers.tag == "Player") {
 				//Its the player
@@ -105,6 +106,9 @@ public class PressurePlate : MonoBehaviour {
 			}
 			
 			if (script != null) {
+				/*
+				MAFIN - aqui estamos seguros de que se desactiva y que lo que le han puesto encima pasa por el filtro.
+				*/
 				switch (actionOut) {
 					case Actions.Deactivate: 
 						script.Deactivate();
