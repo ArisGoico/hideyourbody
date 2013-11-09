@@ -499,27 +499,27 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 579210592}
   - {fileID: 133570280}
   - {fileID: 222314586}
-  - {fileID: 1884102399}
+  - {fileID: 579210592}
   - {fileID: 407339894}
-  - {fileID: 932222534}
-  - {fileID: 2099716715}
+  - {fileID: 1884102399}
   - {fileID: 1992067155}
-  - {fileID: 1216415902}
-  - {fileID: 2037810087}
-  - {fileID: 1828738833}
-  - {fileID: 2132780677}
-  - {fileID: 512732695}
-  - {fileID: 1409369670}
-  - {fileID: 583693971}
-  - {fileID: 1874995320}
+  - {fileID: 2099716715}
+  - {fileID: 932222534}
   - {fileID: 920998871}
+  - {fileID: 1409369670}
+  - {fileID: 512732695}
+  - {fileID: 2037810087}
   - {fileID: 1755413081}
+  - {fileID: 2132780677}
+  - {fileID: 583693971}
   - {fileID: 1292600260}
-  - {fileID: 124793688}
+  - {fileID: 1874995320}
+  - {fileID: 1216415902}
+  - {fileID: 1828738833}
   - {fileID: 1821976930}
+  - {fileID: 124793688}
   - {fileID: 1653424729}
   - {fileID: 1262766347}
   m_Father: {fileID: 1353416155}
@@ -15141,13 +15141,13 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 216193335}
-  - {fileID: 2001696044}
-  - {fileID: 681326671}
   - {fileID: 1065577619}
   - {fileID: 617875758}
+  - {fileID: 681326671}
   - {fileID: 1856253641}
+  - {fileID: 216193335}
   - {fileID: 232463983}
+  - {fileID: 2001696044}
   - {fileID: 866062975}
   - {fileID: 1604018996}
   - {fileID: 2077042363}
@@ -15155,22 +15155,22 @@ Transform:
   - {fileID: 2125672106}
   - {fileID: 2021193394}
   - {fileID: 2017824594}
-  - {fileID: 921839463}
-  - {fileID: 758245741}
-  - {fileID: 302829496}
   - {fileID: 1043103687}
-  - {fileID: 880183414}
-  - {fileID: 1200705194}
-  - {fileID: 73455888}
-  - {fileID: 1274884643}
+  - {fileID: 921839463}
   - {fileID: 483992849}
-  - {fileID: 382752198}
-  - {fileID: 641967860}
-  - {fileID: 1452228924}
   - {fileID: 596819772}
+  - {fileID: 1200705194}
+  - {fileID: 758245741}
+  - {fileID: 1967209352}
   - {fileID: 1811429178}
   - {fileID: 228425856}
-  - {fileID: 1967209352}
+  - {fileID: 382752198}
+  - {fileID: 73455888}
+  - {fileID: 880183414}
+  - {fileID: 1274884643}
+  - {fileID: 1452228924}
+  - {fileID: 302829496}
+  - {fileID: 641967860}
   - {fileID: 540886433}
   m_Father: {fileID: 775665515}
 --- !u!1 &641967859
@@ -32151,6 +32151,7 @@ GameObject:
   - 114: {fileID: 1305397904}
   - 114: {fileID: 1305397903}
   - 114: {fileID: 1305397902}
+  - 114: {fileID: 1305397906}
   m_Layer: 0
   m_Name: First Person Controller
   m_TagString: Untagged
@@ -32273,6 +32274,18 @@ CharacterController:
   m_SkinWidth: .0500000007
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1305397906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305397900}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0db39eee3cf844fb6449902b679e7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 0}
 --- !u!1 &1310527668
 GameObject:
   m_ObjectHideFlags: 0
