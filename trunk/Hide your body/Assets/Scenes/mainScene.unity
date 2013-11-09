@@ -63,17 +63,17 @@ LightmapSettings:
 NavMeshSettings:
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    agentRadius: .5
-    agentHeight: 2
-    agentSlope: 45
-    agentClimb: .400000006
+    agentRadius: .400000006
+    agentHeight: 1
+    agentSlope: 50
+    agentClimb: .0799999982
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     accuratePlacement: 0
-    minRegionArea: 2
-    widthInaccuracy: 16.666666
+    minRegionArea: 1
+    widthInaccuracy: 5
     heightInaccuracy: 10
-  m_NavMesh: {fileID: 0}
+  m_NavMesh: {fileID: 19400000, guid: 0625bd1255abecd43bc952edf1186bba, type: 2}
 --- !u!1 &311031
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,7 +855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 256
   detecting: 1
 --- !u!1 &45281553
 GameObject:
@@ -1878,6 +1878,10 @@ Prefab:
     - target: {fileID: 100000, guid: 10bbbe1b53bd3b847b26b1d83cde5b91, type: 2}
       propertyPath: m_Name
       value: CameraNW
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 10bbbe1b53bd3b847b26b1d83cde5b91, type: 2}
+      propertyPath: mask.m_Bits
+      value: 256
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 10bbbe1b53bd3b847b26b1d83cde5b91, type: 2}
@@ -4617,7 +4621,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &186760177
 Renderer:
@@ -6755,7 +6759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 256
   detecting: 1
 --- !u!1 &251262608
 GameObject:
@@ -6885,6 +6889,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 10bbbe1b53bd3b847b26b1d83cde5b91, type: 2}
       propertyPath: maxRotationRight
       value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 10bbbe1b53bd3b847b26b1d83cde5b91, type: 2}
+      propertyPath: mask.m_Bits
+      value: 256
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 10bbbe1b53bd3b847b26b1d83cde5b91, type: 2}
@@ -10001,9 +10009,10 @@ GameObject:
   - 4: {fileID: 355458815}
   - 33: {fileID: 355458818}
   - 23: {fileID: 355458816}
+  - 114: {fileID: 355458817}
   m_Layer: 0
   m_Name: CameraNW
-  m_TagString: Untagged
+  m_TagString: Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -10041,6 +10050,18 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
+--- !u!114 &355458817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 10bbbe1b53bd3b847b26b1d83cde5b91,
+    type: 2}
+  m_PrefabInternal: {fileID: 98871092}
+  m_GameObject: {fileID: 355458814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09dbc43094fd984680945419d1935b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &355458818
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14088,7 +14109,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &489511286
 Renderer:
@@ -15099,6 +15120,10 @@ Prefab:
     - target: {fileID: 14300000, guid: e7283307c352d694fb34f74216870fe6, type: 2}
       propertyPath: m_Height
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: e7283307c352d694fb34f74216870fe6, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7283307c352d694fb34f74216870fe6, type: 2}
@@ -26869,6 +26894,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .999635935
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1a4a7ef870dd1f24e900f8b594043611, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a4a7ef870dd1f24e900f8b594043611, type: 2}
   m_RootGameObject: {fileID: 186760176}
@@ -31228,7 +31257,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &1102792066
 Renderer:
@@ -32403,6 +32432,7 @@ GameObject:
   - 114: {fileID: 1147045604}
   - 114: {fileID: 1147045603}
   - 114: {fileID: 1147045605}
+  - 114: {fileID: 1147045607}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -32525,6 +32555,18 @@ CharacterController:
   m_SkinWidth: .0500000007
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1147045607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400010, guid: e7283307c352d694fb34f74216870fe6,
+    type: 2}
+  m_PrefabInternal: {fileID: 516974746}
+  m_GameObject: {fileID: 1147045601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5b65992f01006346916211615242b05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1149165064
 GameObject:
   m_ObjectHideFlags: 0
@@ -35534,6 +35576,10 @@ Prefab:
       propertyPath: maxRotationRight
       value: -60
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 10bbbe1b53bd3b847b26b1d83cde5b91, type: 2}
+      propertyPath: mask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 10bbbe1b53bd3b847b26b1d83cde5b91, type: 2}
   m_RootGameObject: {fileID: 1954847497}
@@ -35821,9 +35867,10 @@ GameObject:
   - 4: {fileID: 1259957547}
   - 33: {fileID: 1259957546}
   - 23: {fileID: 1259957544}
+  - 114: {fileID: 1259957545}
   m_Layer: 0
   m_Name: CameraNE1
-  m_TagString: Untagged
+  m_TagString: Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -35849,6 +35896,18 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
+--- !u!114 &1259957545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 10bbbe1b53bd3b847b26b1d83cde5b91,
+    type: 2}
+  m_PrefabInternal: {fileID: 252346165}
+  m_GameObject: {fileID: 1259957543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09dbc43094fd984680945419d1935b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &1259957546
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -38502,7 +38561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 256
   detecting: 1
 --- !u!1 &1341690390
 GameObject:
@@ -42322,6 +42381,14 @@ Prefab:
       propertyPath: m_Name
       value: CameraN
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 10bbbe1b53bd3b847b26b1d83cde5b91, type: 2}
+      propertyPath: mask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 10bbbe1b53bd3b847b26b1d83cde5b91, type: 2}
+      propertyPath: detecting
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 10bbbe1b53bd3b847b26b1d83cde5b91, type: 2}
   m_RootGameObject: {fileID: 1599923446}
@@ -43965,6 +44032,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .999635935
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1a4a7ef870dd1f24e900f8b594043611, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a4a7ef870dd1f24e900f8b594043611, type: 2}
   m_RootGameObject: {fileID: 1102792065}
@@ -45175,9 +45246,10 @@ GameObject:
   - 4: {fileID: 1599923447}
   - 33: {fileID: 1599923450}
   - 23: {fileID: 1599923448}
+  - 114: {fileID: 1599923449}
   m_Layer: 0
   m_Name: CameraN
-  m_TagString: Untagged
+  m_TagString: Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -45215,6 +45287,18 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
+--- !u!114 &1599923449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 10bbbe1b53bd3b847b26b1d83cde5b91,
+    type: 2}
+  m_PrefabInternal: {fileID: 1484572821}
+  m_GameObject: {fileID: 1599923446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09dbc43094fd984680945419d1935b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &1599923450
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -55523,9 +55607,10 @@ GameObject:
   - 4: {fileID: 1954847498}
   - 33: {fileID: 1954847501}
   - 23: {fileID: 1954847499}
+  - 114: {fileID: 1954847500}
   m_Layer: 0
   m_Name: CameraNE2
-  m_TagString: Untagged
+  m_TagString: Camera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
@@ -55563,6 +55648,18 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
+--- !u!114 &1954847500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: 10bbbe1b53bd3b847b26b1d83cde5b91,
+    type: 2}
+  m_PrefabInternal: {fileID: 1244043820}
+  m_GameObject: {fileID: 1954847497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09dbc43094fd984680945419d1935b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!33 &1954847501
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -56763,7 +56860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 256
   detecting: 1
 --- !u!1 &2014865582
 GameObject:
@@ -59936,7 +60033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2125971541
 Transform:
   m_ObjectHideFlags: 0
