@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class CameraMovement : MonoBehaviour {
-
 	
 	public float maxRotationLeft		= 0.0f;
 	public float maxRotationRight		= 0.0f;
@@ -34,4 +33,13 @@ public class CameraMovement : MonoBehaviour {
 		if (Quaternion.Angle(this.transform.localRotation, rotationRight) < 0.5f && !rotatingLeft)
 			rotatingLeft = true;
 	}
+	
+	public void centerCamera()
+	{
+		transform.localRotation = Quaternion.Euler(0,0,0);		
+	}
+	
+	public void activeCamera(){moving = true;}
+	public void desactiveCamera(){moving = false;}
+	public void changeRotationSpeed(float newRotationSpeed){rotationSpeed = newRotationSpeed;}
 }
