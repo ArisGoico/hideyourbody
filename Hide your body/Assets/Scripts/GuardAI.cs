@@ -16,9 +16,11 @@ public class GuardAI : MonoBehaviour {
 		cameraMovement.desactiveCamera();
 		if(waypoints.Length > 0)
 		{			
-			int newNumCurrentWaypoint;
-			do{newNumCurrentWaypoint = Random.Range(0,waypoints.Length);}while(newNumCurrentWaypoint == numCurrentWaypoint);					
-			numCurrentWaypoint = newNumCurrentWaypoint;
+			//int newNumCurrentWaypoint;
+			//do{newNumCurrentWaypoint = Random.Range(0,waypoints.Length);}while(newNumCurrentWaypoint == numCurrentWaypoint);		
+			//numCurrentWaypoint = newNumCurrentWaypoint;
+			numCurrentWaypoint++;
+			numCurrentWaypoint %= waypoints.Length;
 			currentWaypoint = waypoints[numCurrentWaypoint];		
 			agent.SetDestination(currentWaypoint);
 		}	
@@ -46,10 +48,12 @@ public class GuardAI : MonoBehaviour {
 					stop = false;
 					cameraMovement.centerCamera();
 					cameraMovement.desactiveCamera();
-					int newNumCurrentWaypoint;
-					do{newNumCurrentWaypoint = Random.Range(0,waypoints.Length);}while(newNumCurrentWaypoint == numCurrentWaypoint);					
-					numCurrentWaypoint = newNumCurrentWaypoint;
+					//int newNumCurrentWaypoint;
+					//do{newNumCurrentWaypoint = Random.Range(0,waypoints.Length);}while(newNumCurrentWaypoint == numCurrentWaypoint);					
+					//numCurrentWaypoint = newNumCurrentWaypoint;
 					//Debug.Log("Pos nº:"+pos+" vector:"+waypoints[pos]);
+					numCurrentWaypoint++;
+					numCurrentWaypoint %= waypoints.Length;
 					currentWaypoint = waypoints[numCurrentWaypoint];		
 					agent.SetDestination(currentWaypoint);
 				}
