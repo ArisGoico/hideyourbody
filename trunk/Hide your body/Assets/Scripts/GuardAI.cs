@@ -12,7 +12,7 @@ public class GuardAI : MonoBehaviour {
 	private CameraMovement cameraMovement;
 	void Start () {
 		agent = GetComponent<NavMeshAgent>();
-		cameraMovement = this.transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<CameraMovement>();
+		cameraMovement = this.transform.GetChild(0).GetComponent<CameraMovement>();
 		cameraMovement.desactiveCamera();
 		if(waypoints.Length > 0)
 		{			
