@@ -4,7 +4,8 @@ using System.Collections;
 public class GuardAI : MonoBehaviour {
 	public Vector3[] waypoints;
 	public Vector3 currentWaypoint;	
-	public int numCurrentWaypoint;
+	public int numCurrentWaypoint;	
+	public bool[] watchPoints;
 	private NavMeshAgent agent;	
 	private bool stop = false;
 	private float watchTime = 5.5f;
@@ -25,6 +26,8 @@ public class GuardAI : MonoBehaviour {
 			agent.SetDestination(currentWaypoint);
 		}	
 		cameraMovement.changeRotationSpeed(50);
+		if(waypoints.Length != watchPoints.Length)
+			watchPoints = new bool[waypoints.Length];
 	}
 	
 	void FixedUpdate () {
@@ -34,9 +37,22 @@ public class GuardAI : MonoBehaviour {
 			{
 				if(transform.position.x == currentWaypoint.x && transform.position.z == currentWaypoint.z)
 				{
-					stop = true;
-					cameraMovement.activeCamera();
-					currentWatchTime = Time.time;								
+					if(watchPoints[numCurrentWaypoint])
+					{
+						stop = true;
+						agent.Stop();
+						cameraMovement.activeCamera();					
+						currentWatchTime = Time.time;
+					}
+					else
+					{
+						numCurrentWaypoint++;
+						numCurrentWaypoint %= waypoints.Length;
+						currentWaypoint = waypoints[numCurrentWaypoint];		
+						agent.SetDestination(currentWaypoint);
+					}
+					
+					
 				}
 				//agent.SetDestination(waypoints[numCurrentWaypoint]);
 				//agent.SetDestination(currentWaypoint);
@@ -47,7 +63,7 @@ public class GuardAI : MonoBehaviour {
 				{
 					stop = false;
 					cameraMovement.centerCamera();
-					cameraMovement.desactiveCamera();
+					cameraMovement.desactiveCamera();				
 					//int newNumCurrentWaypoint;
 					//do{newNumCurrentWaypoint = Random.Range(0,waypoints.Length);}while(newNumCurrentWaypoint == numCurrentWaypoint);					
 					//numCurrentWaypoint = newNumCurrentWaypoint;
@@ -55,7 +71,8 @@ public class GuardAI : MonoBehaviour {
 					numCurrentWaypoint++;
 					numCurrentWaypoint %= waypoints.Length;
 					currentWaypoint = waypoints[numCurrentWaypoint];		
-					agent.SetDestination(currentWaypoint);
+					agent.SetDestination(currentWaypoint);	
+					agent.Resume();
 				}
 			}
 		}

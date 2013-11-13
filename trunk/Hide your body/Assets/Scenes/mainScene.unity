@@ -1775,7 +1775,7 @@ GameObject:
   - 23: {fileID: 47453991}
   - 54: {fileID: 47453990}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3887,7 +3887,7 @@ GameObject:
   - 23: {fileID: 115574000}
   - 54: {fileID: 115573999}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5841,6 +5841,7 @@ MonoBehaviour:
   - {x: 7.69999981, y: 0, z: 7.69999981}
   currentWaypoint: {x: 0, y: 0, z: 0}
   numCurrentWaypoint: 0
+  watchPoints: 01000100
 --- !u!195 &168327327
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -7985,7 +7986,7 @@ GameObject:
   - 23: {fileID: 254960159}
   - 54: {fileID: 254960158}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11089,7 +11090,7 @@ GameObject:
   - 23: {fileID: 359988927}
   - 54: {fileID: 359988926}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11385,7 +11386,7 @@ GameObject:
   - 23: {fileID: 376777087}
   - 54: {fileID: 376777086}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11515,7 +11516,7 @@ GameObject:
   - 23: {fileID: 378025884}
   - 54: {fileID: 378025883}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17954,7 +17955,7 @@ GameObject:
   - 23: {fileID: 551801515}
   - 54: {fileID: 551801514}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18558,7 +18559,7 @@ GameObject:
   - 23: {fileID: 564975269}
   - 54: {fileID: 564975268}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18715,7 +18716,7 @@ GameObject:
   - 23: {fileID: 568982477}
   - 54: {fileID: 568982476}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21608,7 +21609,7 @@ GameObject:
   - 23: {fileID: 643701023}
   - 54: {fileID: 643701022}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22303,7 +22304,7 @@ GameObject:
   - 23: {fileID: 662805445}
   - 54: {fileID: 662805444}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24305,7 +24306,7 @@ GameObject:
   - 23: {fileID: 702922040}
   - 54: {fileID: 702922039}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24539,7 +24540,7 @@ GameObject:
   - 23: {fileID: 713478807}
   - 54: {fileID: 713478806}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24696,7 +24697,7 @@ GameObject:
   - 23: {fileID: 714908878}
   - 54: {fileID: 714908877}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30720,7 +30721,7 @@ GameObject:
   - 23: {fileID: 915521478}
   - 54: {fileID: 915521477}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32315,7 +32316,7 @@ GameObject:
   - 23: {fileID: 958001481}
   - 54: {fileID: 958001480}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34142,7 +34143,7 @@ GameObject:
   - 23: {fileID: 994053950}
   - 54: {fileID: 994053949}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35385,7 +35386,7 @@ GameObject:
   - 23: {fileID: 1026646799}
   - 54: {fileID: 1026646798}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37081,6 +37082,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400000, guid: fa44c82b1a4d7094a8a0a9c8917925e7, type: 2}
+      propertyPath: watchPoints.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa44c82b1a4d7094a8a0a9c8917925e7, type: 2}
       propertyPath: m_LocalPosition.x
       value: 7.73475266
@@ -37107,6 +37112,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa44c82b1a4d7094a8a0a9c8917925e7, type: 2}
       propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: fa44c82b1a4d7094a8a0a9c8917925e7, type: 2}
+      propertyPath: watchPoints.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: fa44c82b1a4d7094a8a0a9c8917925e7, type: 2}
+      propertyPath: watchPoints.Array.data[2]
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -37370,7 +37383,7 @@ GameObject:
   - 23: {fileID: 1076748267}
   - 54: {fileID: 1076748266}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40619,7 +40632,7 @@ GameObject:
   - 23: {fileID: 1164809005}
   - 54: {fileID: 1164809004}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41069,7 +41082,7 @@ GameObject:
   - 23: {fileID: 1177254804}
   - 54: {fileID: 1177254803}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41442,7 +41455,7 @@ GameObject:
   - 23: {fileID: 1183596838}
   - 54: {fileID: 1183596837}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42279,7 +42292,7 @@ GameObject:
   - 23: {fileID: 1212573576}
   - 54: {fileID: 1212573575}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48187,7 +48200,7 @@ GameObject:
   - 23: {fileID: 1363839311}
   - 54: {fileID: 1363839310}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48668,7 +48681,7 @@ GameObject:
   - 23: {fileID: 1376998952}
   - 54: {fileID: 1376998951}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49919,7 +49932,7 @@ GameObject:
   - 23: {fileID: 1417215306}
   - 54: {fileID: 1417215305}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60726,7 +60739,7 @@ GameObject:
   - 23: {fileID: 1695012448}
   - 54: {fileID: 1695012447}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61143,7 +61156,7 @@ GameObject:
   - 23: {fileID: 1701214346}
   - 54: {fileID: 1701214345}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61315,7 +61328,7 @@ GameObject:
   - 23: {fileID: 1703922432}
   - 54: {fileID: 1703922431}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63846,20 +63859,20 @@ Transform:
   - {fileID: 590712210}
   - {fileID: 1565411909}
   - {fileID: 1684101469}
-  - {fileID: 1360866330}
-  - {fileID: 1429376621}
   - {fileID: 1861112734}
-  - {fileID: 455652881}
   - {fileID: 506999850}
   - {fileID: 1979773505}
-  - {fileID: 2127442668}
-  - {fileID: 302119219}
-  - {fileID: 525690939}
-  - {fileID: 1884394466}
-  - {fileID: 1741301966}
-  - {fileID: 1116231075}
   - {fileID: 303062019}
+  - {fileID: 1116231075}
+  - {fileID: 302119219}
+  - {fileID: 1360866330}
+  - {fileID: 525690939}
+  - {fileID: 1741301966}
+  - {fileID: 1884394466}
+  - {fileID: 1429376621}
   - {fileID: 856984731}
+  - {fileID: 455652881}
+  - {fileID: 2127442668}
   - {fileID: 935899051}
   m_Father: {fileID: 795223955}
 --- !u!1001 &1774519083
@@ -67004,7 +67017,7 @@ GameObject:
   - 23: {fileID: 1851986376}
   - 54: {fileID: 1851986375}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71235,7 +71248,7 @@ GameObject:
   - 23: {fileID: 1972638113}
   - 54: {fileID: 1972638112}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71848,7 +71861,7 @@ GameObject:
   - 23: {fileID: 1993823002}
   - 54: {fileID: 1993823001}
   m_Layer: 0
-  m_Name: box3
+  m_Name: Box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
