@@ -31,6 +31,18 @@ ModelImporter:
     100050: wallnCorner1x1
     100052: door1x1
     100054: cornerDoor1x1
+    100056: fence
+    100058: 90TurnTop
+    100060: corner1x1_001
+    100062: cornerDoor1x1_001
+    100064: cross1x1_001
+    100066: deadEnd1x1_001
+    100068: doorOut1x1_001
+    100070: hallway1x1_001
+    100072: T1x1_001
+    100074: wall1x1_001
+    100076: wallnCorner1x1_001
+    100078: 90Turn1x1_001
     400000: Cube_000
     400002: Cube_001
     400004: Cube_002
@@ -59,6 +71,18 @@ ModelImporter:
     400050: wallnCorner1x1
     400052: door1x1
     400054: cornerDoor1x1
+    400056: fence
+    400058: 90TurnTop
+    400060: corner1x1_001
+    400062: cornerDoor1x1_001
+    400064: cross1x1_001
+    400066: deadEnd1x1_001
+    400068: doorOut1x1_001
+    400070: hallway1x1_001
+    400072: T1x1_001
+    400074: wall1x1_001
+    400076: wallnCorner1x1_001
+    400078: 90Turn1x1_001
     2300000: Cube_000
     2300002: Cube_001
     2300004: Cube_002
@@ -86,6 +110,18 @@ ModelImporter:
     2300048: wallnCorner1x1
     2300050: door1x1
     2300052: cornerDoor1x1
+    2300054: fence
+    2300056: 90TurnTop
+    2300058: corner1x1_001
+    2300060: cornerDoor1x1_001
+    2300062: cross1x1_001
+    2300064: deadEnd1x1_001
+    2300066: doorOut1x1_001
+    2300068: hallway1x1_001
+    2300070: T1x1_001
+    2300072: wall1x1_001
+    2300074: wallnCorner1x1_001
+    2300076: 90Turn1x1_001
     3300000: Cube_000
     3300002: Cube_001
     3300004: Cube_002
@@ -113,6 +149,18 @@ ModelImporter:
     3300048: wallnCorner1x1
     3300050: door1x1
     3300052: cornerDoor1x1
+    3300054: fence
+    3300056: 90TurnTop
+    3300058: corner1x1_001
+    3300060: cornerDoor1x1_001
+    3300062: cross1x1_001
+    3300064: deadEnd1x1_001
+    3300066: doorOut1x1_001
+    3300068: hallway1x1_001
+    3300070: T1x1_001
+    3300072: wall1x1_001
+    3300074: wallnCorner1x1_001
+    3300076: 90Turn1x1_001
     4300000: Cube_011
     4300002: Cube_010
     4300004: Cube_009
@@ -140,6 +188,18 @@ ModelImporter:
     4300048: deadEnd1x1
     4300050: door1x1
     4300052: cornerDoor1x1
+    4300054: fence
+    4300056: deadEnd1x1_001
+    4300058: 90TurnTop
+    4300060: T1x1_001
+    4300062: cross1x1_001
+    4300064: doorOut1x1_001
+    4300066: wall1x1_001
+    4300068: corner1x1_001
+    4300070: wallnCorner1x1_001
+    4300072: hallway1x1_001
+    4300074: cornerDoor1x1_001
+    4300076: 90Turn1x1_001
     7400000: Default Take
     9500000: //RootNode
   materials:
