@@ -32,7 +32,10 @@ public class CameraDetection : MonoBehaviour {
         	RaycastHit hitInfo;
         	if (Physics.Raycast(ray, out hitInfo, Mathf.Infinity)) {
         		if (hitInfo.collider == other)
-        			Debug.Log("Collider " + other.transform.name + " hit by the camera on exit.");
+				{
+					Debug.Log("Collider " + other.transform.name + " hit by the camera on exit.");
+					other.gameObject.GetComponent<GlobalLogic>().playerDetected();
+				}				
         	}        	
         }
     }
