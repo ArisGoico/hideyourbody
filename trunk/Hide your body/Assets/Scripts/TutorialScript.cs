@@ -9,6 +9,9 @@ public class TutorialScript : MonoBehaviour {
 	public Texture2D[] tutorial;
 	private Rect[] tutorialPos;
 	
+	private Texture2D tutorialSplash;
+	private Rect tutorialSplashPos;
+	
 	public float splashTime			= 0.0f;
 	private float splashTimeReal;
 	
@@ -30,6 +33,8 @@ public class TutorialScript : MonoBehaviour {
 		}
 		showSplash = true;
 		splashTimeReal = Time.time + splashTime;
+		tutorialSplash = splashImage;
+		tutorialSplashPos = splashPos;
 		turnPauseOn();
 	}
 	
@@ -37,6 +42,9 @@ public class TutorialScript : MonoBehaviour {
 		if (Time.realtimeSinceStartup >= splashTimeReal) {
 			showSplash = false;
 			turnPauseOff();
+		}
+		if (Input.anyKey) {
+			splashTimeReal = Time.realtimeSinceStartup;
 		}
 	}
 	
@@ -47,7 +55,7 @@ public class TutorialScript : MonoBehaviour {
 	}
 	
 	private void splashGUI() {
-		GUI.Label(splashPos, splashImage);
+		GUI.Label(tutorialSplashPos, tutorialSplash);
 	}
 	
 	private void turnPauseOn() {
@@ -56,7 +64,6 @@ public class TutorialScript : MonoBehaviour {
 		BloomAndLensFlares script = Camera.main.GetComponent<BloomAndLensFlares>();
 		script.bloomThreshhold = 0.0f;
 		script.bloomIntensity = 4.5f;
-//		Debug.Log("Threshhold: " + script.bloomThreshhold + ". Intensity: " + script.bloomIntensity);
 	}
 	
 	private void turnPauseOff() {
@@ -65,5 +72,14 @@ public class TutorialScript : MonoBehaviour {
 		script.bloomThreshhold = 0.3f;
 		script.bloomIntensity = 1.0f;
 		Time.timeScale = 1.0f;
+	}
+	
+	public void launchTutorial(int tutScreen, float time = 10.0f) {
+		if (tutScreen < tutorial.Length && tutScreen >= 0) {
+			tutorialSplash = tutorial[tutScreen];
+			tutorialSplashPos = tutorialPos[tutScreen];
+			splashTimeReal = Time.realtimeSinceStartup + time;
+			showSplash = true;
+		}
 	}
 }
