@@ -35,14 +35,14 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _DecalTex
+          name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ParallaxMap
+          name: _DecalTex
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -51,7 +51,7 @@ Material:
       data:
         first:
           name: _Shininess
-        second: .232016981
+        second: .0252051465
       data:
         first:
           name: _EmissionLM
