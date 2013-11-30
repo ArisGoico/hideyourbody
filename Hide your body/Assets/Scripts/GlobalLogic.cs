@@ -10,7 +10,7 @@ public class GlobalLogic : MonoBehaviour {
 	void Start () {
 		alarm = false;
 		transform.position = startPoint;
-		GetComponent<FPSInputController>().enabled = true;		
+		GetComponent<CharacterMotor>().canControl = true;			
 	}
 	
 	// Update is called once per frame
@@ -33,7 +33,7 @@ public class GlobalLogic : MonoBehaviour {
 	public void playerDetected()
 	{
 		Debug.Log("Player detected: Game Over. Press mouse left button to restart level.");
-		GetComponent<FPSInputController>().enabled = false;
+		GetComponent<CharacterMotor>().canControl = false;
 		alarm = true;		
 	}
 	
@@ -41,6 +41,6 @@ public class GlobalLogic : MonoBehaviour {
 	{
 		alarm = false;
 		transform.position = startPoint;
-		GetComponent<FPSInputController>().enabled = true;			
+		GetComponent<CharacterMotor>().canControl = true;		
 	}
 }

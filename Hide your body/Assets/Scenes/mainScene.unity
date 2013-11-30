@@ -20776,6 +20776,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: e7283307c352d694fb34f74216870fe6, type: 2}
+      propertyPath: canControl
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7283307c352d694fb34f74216870fe6, type: 2}
   m_RootGameObject: {fileID: 1147045601}
@@ -22439,6 +22443,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 86bb093810671714aa1081f412d2f0cd, type: 2}
+    - target: {fileID: 2300000, guid: 1687bd079b2ff724bb16f0f71fda23fe, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1687bd079b2ff724bb16f0f71fda23fe, type: 2}
   m_RootGameObject: {fileID: 1903717129}
@@ -52425,6 +52433,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: -.75
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1687bd079b2ff724bb16f0f71fda23fe, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1687bd079b2ff724bb16f0f71fda23fe, type: 2}
   m_RootGameObject: {fileID: 1511988411}
@@ -63338,7 +63350,7 @@ Renderer:
     type: 2}
   m_PrefabInternal: {fileID: 1249875721}
   m_GameObject: {fileID: 1511988411}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
