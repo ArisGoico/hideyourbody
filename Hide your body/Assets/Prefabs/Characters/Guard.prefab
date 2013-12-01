@@ -63,7 +63,6 @@ GameObject:
   - 23: {fileID: 2300000}
   - 114: {fileID: 11400004}
   - 65: {fileID: 6500000}
-  - 64: {fileID: 6400000}
   m_Layer: 0
   m_Name: head
   m_TagString: Untagged
@@ -111,7 +110,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.821352, y: 0, z: 7.92687035}
+  m_LocalPosition: {x: 15.9660397, y: 0, z: 6.21037292}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400006}
@@ -241,19 +240,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6400000
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 4300002, guid: 4468993880159eb488e48a5ed3fb00e9, type: 3}
 --- !u!64 &6400002
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -300,7 +286,7 @@ Light:
     m_Bias: .0500000007
     m_Softness: 4
     m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
+  m_Cookie: {fileID: 2800000, guid: caf52aea0792142429809797597e0193, type: 3}
   m_DrawHalo: 0
   m_ActuallyLightmapped: 0
   m_Flare: {fileID: 12100000, guid: 177aafc60bfef2042b526a3fe5e0bd86, type: 2}
@@ -335,7 +321,7 @@ Light:
     m_Bias: .0500000007
     m_Softness: 4
     m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
+  m_Cookie: {fileID: 2800000, guid: caf52aea0792142429809797597e0193, type: 3}
   m_DrawHalo: 0
   m_ActuallyLightmapped: 0
   m_Flare: {fileID: 12100000, guid: 177aafc60bfef2042b526a3fe5e0bd86, type: 2}
@@ -361,13 +347,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waypoints:
-  - {x: 16, y: 0, z: 31.5}
-  - {x: 16, y: 0, z: 14}
+  - {x: 16, y: 0, z: 8}
+  - {x: 16, y: 0, z: 15}
   - {x: 14, y: 0, z: 15}
   - {x: 16, y: 0, z: 15}
   - {x: 16, y: 0, z: 27.7999992}
-  - {x: 16, y: 0, z: 14}
-  - {x: 13, y: 0, z: 14}
+  - {x: 16, y: 0, z: 15}
+  - {x: 13, y: 0, z: 15}
   currentWaypoint: {x: 0, y: 0, z: 0}
   numCurrentWaypoint: 0
   watchPoints: 0000010000000000
