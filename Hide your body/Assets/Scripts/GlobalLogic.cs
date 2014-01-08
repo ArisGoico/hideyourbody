@@ -34,13 +34,16 @@ public class GlobalLogic : MonoBehaviour {
 	{
 		Debug.Log("Player detected: Game Over. Press mouse left button to restart level.");
 		GetComponent<CharacterMotor>().canControl = false;
-		alarm = true;		
+		if (!alarm)
+			this.GetComponent<AudioSource>().Play();
+		alarm = true;
 	}
 	
 	public void resetLevel()
 	{
 		alarm = false;
 		transform.position = startPoint;
-		GetComponent<CharacterMotor>().canControl = true;		
+		GetComponent<CharacterMotor>().canControl = true;
+		this.GetComponent<AudioSource>().Stop();
 	}
 }
