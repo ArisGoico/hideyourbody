@@ -1,0 +1,1 @@
+El jugador tiene que llegar desde un punto inicial a otro final sin ser detectado. En caso de ser detectado sonará una alarma y la luz ambiental tornará a un tono rojizo. Se considerará entonces que ha perdido y deberá empezar el nivel de nuevo.
